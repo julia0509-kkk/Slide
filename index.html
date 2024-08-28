@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/980219df28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Slide</title>
+</head>
+<body>
+    <div class="wrapper" data-slide="wrapper">
+        <div class="slide-wrapper">
+            <button class="slide-nav-button slide-nav-previous fa-solid fa-chevron-left" data-slide="nav-previous-button"></button>
+             <button class="slide-nav-button slide-nav-next fa-solid fa-chevron-right"data-slide="nav-next-button"></button>
+            <div class="slide-list"data-slide="list">
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <img src="img/paisagem1.jpg" alt="Paisagem 1">
+                        <div class="slide-description">
+                            <h3>Paisagem 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="1">
+                    <div class="slide-content">
+                        <img src="img/paisagem2.jpg" alt="Paisagem 2">
+                        <div class="slide-description">
+                            <h3>Paisagem 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="2">
+                    <div class="slide-content">
+                        <img src="img/paisagem3.jpg" alt="Paisagem 3">
+                        <div class="slide-description">
+                            <h3>Paisagem 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="3">
+                    <div class="slide-content">
+                        <img src="img/paisagem4.jpg" alt="Paisagem 4">
+                        <div class="slide-description">
+                            <h3>Paisagem 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="4">
+                    <div class="slide-content">
+                        <img src="img/paisagem5.jpg" alt="Paisagem 5">
+                        <div class="slide-description">
+                            <h3>Paisagem 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item" data-slide="item" data-index="5">
+                    <div class="slide-content">
+                        <img src="img/paisagem6.jpg" alt="Paisagem 6">
+                        <div class="slide-description">
+                            <h3>Paisagem 6</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-controls" data-slide="controls-wrapper">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 3000
+        })
+    </script>
+</body>
+</html>

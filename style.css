@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #1f2029;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-list {
+    display: flex;
+}
+.slide-item {
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 90vw;
+    cursor: grab;
+}
+.slide-content {
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: #000 0px 12px 12px;
+}
+.slide-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.slide-description {
+    color: #fff;
+    background: linear-gradient(to top, #000, transparent);
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide-description h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+}
+.slide-description p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide-nav-button {
+    position: absolute;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 36px;
+    z-index: 1;
+}
+.slide-nav-previous {
+    left: 20px;
+}
+.slide-nav-next {
+    right: 20px;
+}
+.slide-controls {
+    margin: 30px auto 0;
+}
+.slide-control-button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slide-control-button.active {
+    color: #cd8cf5;
+}
+@media screen and (max-width: 600px) {
+    .slide-description {
+        padding: 10px;
+    }
+    .slide-description h3 {
+        font-size: 18px;
+        top: 0;
+    }
+    .slide-description p {
+        display: none;
+    }
+    .slide-nav-button {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+    
+    .slide-nav-previous {
+        left: 10px;
+    }
+    
+    .slide-nav-next {
+        right: 10px;
+    }
+    .slide-controls {
+        margin: 15px auto 0;
+    }
+    .slide-control-button {
+        font-size: 14px;
+    }
+
+}
