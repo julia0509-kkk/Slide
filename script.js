@@ -97,39 +97,6 @@ function createSlideClones() {
 
     slideItems = document.querySelectorAll('[data-slide="item"]')
 }
-//O codigo abaixo e para voce mudar a imagem segurando e mexendo
-/*
-function onMouseMove(event) {
-    state.movement = event.clientX - state.startingPoint
-    const position = event.clientX - state.currentPoint
-    translateSlide({ position })
-}
-
-
-slideItems.forEach(function (slideItem, index) {
-    slideItem.addEventListener('dragstart', function (event) {
-        event.preventDefault()
-    })
-    slideItem.addEventListener('mousedown', function (event) {
-        state.startingPoint = event.clientX
-        state.currentPoint = event.clientX - state.savedPosition
-        state.currentSlideIndex = index
-        slideList.style.transition = 'none'
-        slideItem.addEventListener('mousemove', onMouseMove)
-    })
-    slideItem.addEventListener('mouseup', function (event) {
-        const slideItem = event.currentTarget
-
-        if (state.movement < -150) {
-            nextSlide()
-        } else if(state.movement > 150) {
-            previousSlide()
-        } else {
-            setVisibleSlide({ index: state.currentSlideIndex, animate: true })
-        }
-        slideItem.removeEventListener('mousemove', onMouseMove)
-    })
-})*/
 
 //O codigo abaixo e para adicionar o active nas bolinhas
 function onControlButtonClick( index) {
